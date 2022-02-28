@@ -2,6 +2,18 @@ def sum1():
     print(num1 + num2)
 
 
+def subtraction():
+    print(num1 - num2)
+
+
+def multiplication():
+    print(num1 * num2)
+
+
+def division():
+    print(num1 / num2)
+
+
 while True:
     num1 = float(input("Введите первое число либо 0, если хотите завершить программу: "))
     if num1 == 0:
@@ -10,5 +22,11 @@ while True:
     sign = input("Введите +, -, *, /: ")
     if sign == '+':
         sum1()
+    elif sign == '-':
+        subtraction()
+    elif sign == '*':
+        multiplication()
+    elif sign == '/':
+        division()
     else:
         print("Введите +, -, *, /: ")
