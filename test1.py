@@ -6,6 +6,10 @@ def subtraction():
     print(num1 - num2)
 
 
+def multiplication():
+    print(num1 * num2)
+
+
 while True:
     num1 = float(input("Введите первое число либо 0, если хотите завершить программу: "))
     if num1 == 0:
@@ -16,5 +20,7 @@ while True:
         sum1()
     elif sign == '-':
         subtraction()
+    elif sign == '*':
+        multiplication()
     else:
         print("Введите +, -, *, /: ")
